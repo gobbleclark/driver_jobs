@@ -1,0 +1,27 @@
+<h1>Edit Job</h1>
+<%= form_with(model: @job, local: true, class: "striped") do |f| %>
+<div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description, required: true, placeholder: "description" %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %>
+    <%= f.text_field :start_date, required: true, placeholder: "start date" %>
+  </div>
+  <div class="field">
+    <%= f.label :deliver_date %>
+    <%= f.text_field :deliver_date, required: true, placeholder: "deliver date" %>
+  </div>
+  <div class="field">
+    <%= f.label :miles %>
+    <%= f.number_field :miles, required: true, placeholder: "miles" %>
+  </div>
+  <div class="field">
+    <%= f.label :earnings %>
+    <%= f.number_field :earnings, required: true, placeholder: "you earn" %>
+  <%=f.submit nil, class: "btn dark green"%>
+  </div>
+ <%= link_to 'Back', jobs_path, class: "btn gray" %>   
+    <%end%>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="content">
+    <p class="header">
+      <%= @job.name %>
+    </p>
+  </div>
+  <div class="extra content">
+      <div class="center aligned">
+    <%=  link_to "Artists", job_path(@job), class: "btn gray"%> |
+    <%= link_to 'Edit', edit_job_path(@job), class: "btn blue" %> |
+    <%= link_to 'Back', jobs_path, class: "btn gray" %>
+    <br />
+    <br />
+    <%= link_to 'Delete Billboard', job_path(@job), class: "btn red", method: :delete %>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

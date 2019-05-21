@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WadeDrivers</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="container">
+  <nav>
+    <div class="nav-wrapper teal darken-1">
+      <a href="#!" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-light btn" href="google.com">About Us</a></li>
+        <li><a class="waves-effect waves-light btn" href="google.com">Driver Rules</a></li>
+        <li><a class="waves-effect waves-light btn" href="google.com">Newsletter</a></li>
+      </ul>
+    </div>
+  </nav>
+    <%= yield %>
+  </div>
+  </body>
+</html>
